@@ -1,0 +1,174 @@
+body, html {
+                    margin-left: 10%;
+                    margin-right: 10%;
+                    font-family: 'Courier New', monospace;
+            }
+            
+	            
+            .banner {
+                    display: flex;
+                    justify-content: center;
+                       
+            }
+
+            img {
+                    max-width: 80%;
+                    height: auto;
+            }
+            
+        
+
+            ul {      
+	                margin: 0;
+	                padding: 0;
+                    overflow: hidden;
+                    background-color: white;
+            }
+            li {
+	                float: center;
+                    font-size:30px;
+                    display: flex;
+            }
+            li a {
+	                display: block;
+                    color: black;
+                    border: 1px black;
+                    text-align: center;
+                    padding: 14px 14px;
+                    text-decoration: none;
+                    height: auto;
+                    }
+            li a:hover {
+	            background-color: black;
+                color: white;
+            }
+            h1 {
+                font-family:'Courier New', monospace ;
+                font-size: 40px;
+            }
+            p {
+                font-family: 'Courier New', monospace;
+                font-size: 20px;
+            }
+            .qout {
+                font-style: italic;
+                font-weight: bold;
+            }
+            figure {
+	            padding: 0.5em;
+	            margin: 0 0.5em 0.5em 0.5em;
+	            float: left;
+	            width: 30%;
+            }
+            figure img {
+                width: auto;
+                height: auto
+            }
+            .news img {
+	                    width: 35%;
+	                    padding: 0;
+                        float: left;
+	                    margin: 0 1em 0.5em 0em;
+            }
+            .news hr {
+	                    margin: 1em;
+	                    border: 1px  black#27318b;
+	                    clear: both;
+            }
+            .news time {
+	                    font-size: 90%;
+	                    font-style: italic;
+                        font-weight: 800;
+            }
+            
+            footer {
+	                    background-color: black;
+	                    padding: 0.1em;
+	                    clear: both;
+            }
+            footer p {
+	                    color: white;
+	                    text-align: center;
+	                    margin: 0.5em;
+            }
+            
+            #contact {
+                        margin: 0 0 0.5em 0;
+                        font-weight: bold;
+                        font-size: 20px;
+            }
+            label {
+                        display: block;
+            }
+            input[type=text], input[type=email], select, textarea {
+                        width: 50%;
+                        padding: 12px;
+                        border: 1px solid #ccc;
+                        box-sizing: border-box;
+                        margin-top: 6px;
+                        margin-bottom: 16px;
+                        font-family: 'Oswald', sans-serif;
+                        font-size: 95%;
+            }
+            input[type=submit] {
+                        display: block;
+                        background-color: gray;
+                        color: white;
+                        padding: 12px 20px;
+                        border: none;
+                        cursor: pointer;
+                        width: 25%;
+            }
+
+            input[type=submit]:hover{
+                        background-color: #45a049;
+            }
+            input[type=checkbox] {
+                        margin:2%
+            }
+            .yt {       float: left;
+                        padding: 0 1em 1em 0;
+
+            }
+            #gallery {
+                font-weight: bold;
+                text-align: center;
+                font-size: 100%;
+            }
+            @media screen and (max-width: 900px) {
+	        figure {
+		            width: 90%;
+		            margin: 1em;
+	        }
+            .news img {
+                width: 95%;
+                padding: 0.5em;
+                margin: 0 1em 0.5em 0.5em;
+            }
+            .news time {
+                margin: 0 0 0 1em;
+            }
+            #news_gallery figure {
+                padding: 0.5em;
+                margin: 0 1em 0.5em 1em;
+                float: left;
+                width: 90%;
+                border: 1px solid black;
+            }
+            #news_gallery figcaption {
+                font-size: 90%;
+                text-align: center;
+            }
+            #gallery figure {
+                padding: 0.5em;
+                margin: 0 1em 0.5em 1em;
+                float: left;
+                width: 40%;
+                border: 1px solid black;
+            }
+            #gallery figcaption {
+                font-size: 90%;
+                height: 70px;
+                text-align: center;
+            }
+        }

@@ -1,51 +1,66 @@
 <!DOCTYPE html>
 <html lang="hr">
     <head>
-        <title>Web aplikacije</title>
+        <title>LightStudio</title>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta name="description" content="">
 		<meta name="keywords" content="">
 		<meta name="author" content="Kristijan Vukelić">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-        <style>
-
-            body, html {margin-left: 10%;
-                        margin-right: 10%;
-            }
-
-            figure {width: 50%;
-                    float: left;
-                    margin-right: 1px;
-            }
-            figure img{width: 100%;}
-            
-            h1 {font-family: Verdana, Tahoma, sans-serif;
-                font-size: 40px;
-                padding-left: 100px;
-            }
-            p {font-family: Verdana, Tahoma, sans-serif;
-               font-size: 20px;
-               font-weight: bold; 
-            }
-            video  {margin-top: 10px;
-                    width: 100%;
-                    height: auto;
-            }
-           
-        </style>
+        <link rel="stylesheet" href="style.css">
         
     </head>
-    <body>
-        <h1> Harmonic Design P15 Subwoofer</h1>
-        <figure><img src="images/hd-P15.jpg" alt="zvucnik" title="HD P15"></figure>
-        <p>The hd P15 is from an acoustic point of view identical to the hd Sub15 with the difference that the hd P-Series houses the high-end hd MultiDSP and powerful Class-D amplifiers in the same housing and thus becomes the basic building block for any mobile Plug & Play system. This new DSP platform now enables all processing and control functions of large sound systems in easy-to-use plug & play active system.
-         </p>
-        <p>On the rear panel there are level meters for each input and output channel, as well as a USB interface for setting and managing all audio parameters via PC. The extremely powerful DSP offers FIR and IIR filters for the exact adaptation of the PA system to the respective application. The input section includes a routing matrix, a function generator (sine and noise generator) and a freely configurable equalizer per input channel with 16 IIR filters and a 384 taps FIR filter. Each output channel has 16 IIR filters, 384 taps FIR filters, 100 ms delay, 180° phase reversal, peak limiters, RMS limiters, gain and mute. There are 20 factory presets for all Harmonic Design speaker system configurations stored for direct recall to the device so that it can always be reset to a defined default state of the system. This guarantees highest reliability of the connected speakers and ensures a very dynamic and linear sound.
-         </p>
-        <video controls autoplay>
-            <source src="images/video_1.mp4" type="video/mp4">
-        </video>
-        
-    </body>
+<body>
+     <header>
+        <div class="banner">
+            <img src="images/ls_gif_crop.gif" alt="ls_gif">
+        </div>
+            
+            <nav>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="news.html" target="#news_h">News</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <hr>
+    </header>
+    <main>
+    
+		<h1>CONTACT FORM</h1>
+		<div id="contact">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11125.277073497036!2d15.84958294393075!3d45.80486397398018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d1908b2519ff%3A0xd04b0bafce0a9663!2sJankomir%2C%2010090%2C%20Zagreb!5e0!3m2!1shr!2shr!4v1673293985808!5m2!1shr!2shr" width="100%" height="400" frameborder="0" style="border: 0;" allowfullscreen></iframe>
+			<form action="send-contact.php" id="contact_form" name="contact_form" method="POST">
+				<label for="fname">First Name *</label>
+				<input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+				<label for="lname">Last Name *</label>
+				<input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+				
+				<label for="email">Your E-mail *</label>
+				<input type="email" id="email" name="email" placeholder="Your e-mail.." required>
+
+				<label for="country">Country</label>
+				<select id="country" name="country">
+				  <option value="">Please select</option>
+				  <option value="BE">Austria</option>
+				  <option value="HR" selected>Croatia</option>
+				  <option value="LU">Deustchland</option>
+				  <option value="HU">Hungary</option>
+				</select>
+				<label for="subject">Subject</label>
+				<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <label for="checkbox">Newsletter<input type="checkbox" id="newsletter" checked></label>
+				<input type="submit" value="Submit">
+                
+			</form>
+		</div>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2023 Kristijan Vukelić</p>
+	</footer>
+</body>
 </html>
