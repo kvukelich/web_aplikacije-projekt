@@ -13,72 +13,98 @@
 
         <style>
            
-            body, html {margin-left: 10%;
-                        margin-right: 10%;
-                        font-family: 'Courier New', monospace;
+           body, html {
+                    margin-left: 10%;
+                    margin-right: 10%;
+                    font-family: 'Courier New', monospace;
             }
             
 	            
             .banner {
-                        display: flex;
-                        justify-content: center;
+                    display: flex;
+                    justify-content: center;
                        
             }
 
             img {
-                        max-width: 80%;
-                        height: auto;
+                    max-width: 80%;
+                    height: auto;
             }
             
         
 
-            ul {
-	                   
-	                    margin: 0;
-	                    padding: 0;
-                        overflow: hidden;
-                        background-color: white;
-            
+            ul {      
+	                margin: 0;
+	                padding: 0;
+                    overflow: hidden;
+                    background-color: white;
             }
             li {
-	                    float: center;
-                        font-size:30px;
-                        display: flex;
+	                float: center;
+                    font-size:30px;
+                    display: flex;
             }
-
             li a {
-	                    display: block;
-                        color: black;
-                        border: 1px black;
-                        text-align: center;
-                        padding: 14px 14px;
-                        text-decoration: none;
-                        height: auto;
+	                display: block;
+                    color: black;
+                    border: 1px black;
+                    text-align: center;
+                    padding: 14px 14px;
+                    text-decoration: none;
+                    height: auto;
                     }
             li a:hover {
-	                background-color: black;
-                    color: white;
+	            background-color: black;
+                color: white;
             }
-            
-        
-            h1 {font-family:'Courier New', monospace ;
+            h1 {
+                font-family:'Courier New', monospace ;
                 font-size: 40px;
-                ;
             }
-            p {font-family: 'Courier New', monospace;
-               font-size: 20px;
+            p {
+                font-family: 'Courier New', monospace;
+                font-size: 20px;
+            }
+            .qout {
+                font-style: italic;
+                font-weight: bold;
             }
             figure {
 	            padding: 0.5em;
 	            margin: 0 0.5em 0.5em 0.5em;
 	            float: left;
 	            width: 30%;
-	     
             }
-            figure img {width: auto;
-                        height: auto}
-
-
+            figure img {
+                width: auto;
+                height: auto
+            }
+            .news img {
+	                    width: 35%;
+	                    padding: 0;
+                        float: left;
+	                    margin: 0 1em 0.5em 0.5em;
+            }
+            .news hr {
+	                    margin: 1em;
+	                    border: 1px  black#27318b;
+	                    clear: both;
+            }
+            .news time {
+	                    font-size: 90%;
+	                    font-style: italic;
+                        font-weight: 800;
+            }
+            footer {
+	                    background-color: black;
+	                    padding: 0.1em;
+	                    clear: both;
+            }
+            footer p {
+	                    color: white;
+	                    text-align: center;
+	                    margin: 0.5em;
+            }
    </style>
         
     </head>
@@ -91,7 +117,7 @@
             <nav>
                 <ul>
                   <li><a href="index.html">Home</a></li>
-                  <li><a href="news.html">News</a></li>
+                  <li><a href="news.html" target="#news_h">News</a></li>
                   <li><a href="contact.html">Contact</a></li>
                   <li><a href="about.html">About</a></li>
                   <li><a href="gallery.html">Gallery</a></li>
@@ -118,6 +144,9 @@
 			<a href="https://youtube.com" target="_blank"><img src="images/youtube.svg" alt="Youtube" title="Youtube" style="width:24px; margin-top:0.4em"></a>
 		</p>
       
-    </main>        
+    </main> 
+    <footer>
+		<p>Copyright &copy; 2023 Kristijan Vukelić</p>
+	</footer>
 </body>
-</html>
+</html>       
